@@ -1,0 +1,32 @@
+<!-- <div *ngIf="libroList">
+  <h3>Nuestros libros</h3>
+  <div *ngFor="let libro of libroList">
+
+ <img src={{.Image}} />
+<h4>{{ libro.name }}</h4>
+<h4>{{libro.typeText}}</h4>
+<a [routerLink]="['/libros/', libro._id]">Saber más</a>
+
+</div>
+  </div> -->
+<section class="fondo">
+  <div *ngIf="libroList" class="container mt-5" Class="cards">
+    <h3>Nuestros libros</h3>
+    <div class="row">
+    <div *ngFor="let libro of libroList" class="col">
+
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top image-height" src={{libro.Image}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ libro.name }}</h5>
+          <p class="card-text">{{libro.typeText}}</p>
+          <a [routerLink]="['/libros/', libro._id]" class="btn btn-outline-light">Saber más</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+    </div>
+
+  </section>

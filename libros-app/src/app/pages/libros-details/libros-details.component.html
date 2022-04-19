@@ -1,0 +1,27 @@
+<!-- <h2>Saber más sobre...</h2>
+<section class="details1">
+
+<figure class="detalles">
+  <img src='{{libro.Image}}'/>
+  <p> Nombre: {{ libro.name }}</p>
+  <p>Año de publicación: {{ libro.age }}</p>
+  <p>Tipo de novela: {{ libro.typeText }}</p>
+  <p>Sinopsis: {{ libro.descripcion }}</p>
+</figure>
+</section> -->
+
+
+
+  <div class="row">
+    <div class="card" style="width: 150rem;">
+      <img class="card-img-top image-height" src={{libro.Image}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ libro.name }}</h5>
+        <p>Año de publicación: {{ libro.age }}</p>
+        <p class="card-text">Estilo: {{libro.typeText}}</p>
+        <p>Sinopsis: {{ libro.description }}</p>
+      </div>
+    </div>
+  </div>
+
+

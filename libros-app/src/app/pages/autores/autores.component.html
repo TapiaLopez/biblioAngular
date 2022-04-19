@@ -1,0 +1,20 @@
+<section class="fondo">
+<div *ngIf="autorList" class="container mt-5">
+  <h3>Nuestros autores</h3>
+  <div class="row">
+  <div *ngFor="let autor of autorList" class="col">
+
+    <div class="card" style="width: 16rem;">
+      <img class="card-img-top image-height" src={{autor.Image}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ autor.name }}</h5>
+        <p class="card-text">{{autor.typeText}}</p>
+        <a [routerLink]="['/autores/', autor._id]" class="btn btn-outline-light">Saber más</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+</section>
